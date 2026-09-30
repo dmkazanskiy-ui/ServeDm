@@ -202,6 +202,7 @@
   .card--infocus  { background: linear-gradient(88.5deg, rgb(121,121,121) 0%, rgb(29,29,29) 100%); border-color: rgba(51,51,51,0.25); }
   .card--telegram { background: linear-gradient(88.5deg, rgb(0,53,119) 0%, rgb(10,18,36) 100%); border-color: #60a5fa; }
   .card--youtube  { background: linear-gradient(88.5deg, rgb(44,0,0) 0%, rgb(30,30,30) 100%); border-color: rgba(255,0,0,0.25); }
+  .card--instagram{ background: linear-gradient(88.5deg, rgb(90,42,138) 0%, rgb(26,18,48) 100%); border-color: #8034b0; }
   .card--portfolio{ background: #e8e8e8; border-color: rgba(169,169,169,0.25); color: #0f172a; }
   .card--portfolio .card-title { color: var(--slate); }
   .card--portfolio .card-sub   { color: #000; }
@@ -311,7 +312,16 @@
 
     <!-- ===== БЛОГ ===== -->
     <div class="section">
-      <h2 data-i18n="s_blog">Мой блог в других соц-сетях</h2>
+      <h2 data-i18n="s_blog">Мой блог в социальных сетях</h2>
+
+      <!-- КНОПКА/КАРТА: Instagram -->
+      <a class="card card--instagram" href="https://instagram.com/dmkazanskiy" target="_blank" rel="noopener" data-ga="Instagram">
+        <img class="card-icon" src="assets/instagram.png" alt="Instagram" />
+        <div class="card-body">
+          <div class="card-title" data-i18n="ig_t">Instagram: @dmkazanskiy</div>
+          <div class="card-sub" data-i18n="ig_s">Снимаю мотивирующие reels о своей трансформации</div>
+        </div>
+      </a>
 
       <!-- КНОПКА/КАРТА: Telegram-канал -->
       <a class="card card--telegram" href="https://t.me/dmkazanskiy_trnc" target="_blank" rel="noopener" data-ga="Telegram-канал">
@@ -330,8 +340,8 @@
       </a>
     </div>
 
-    <!-- ===== ДЛЯ КОМПАНИЙ ===== -->
-    <div class="section">
+    <!-- ===== ДЛЯ КОМПАНИЙ ===== (скрыт до запуска нового сайта-портфолио: убери style="display:none") -->
+    <div class="section" style="display:none">
       <h2 data-i18n="s_companies">Для компаний:</h2>
       <p class="lead" data-i18n="comp_1">Построил карьеру продуктового дизайнера. Помогаю превращать сложные идеи в понятные цифровые продукты.</p>
       <p class="lead" data-i18n="comp_2">За последние годы запускал веб-сервисы, мобильные приложения, AI-инструменты и корпоративные платформы для крупных компаний.</p>
@@ -377,7 +387,9 @@
     infocus_t: "inFocus: habit tracker",
     infocus_s: "A journal for daily discipline tracking",
 
-    s_blog: "My blog on other social media",
+    s_blog: "My blog on social media",
+    ig_t: "Instagram: @dmkazanskiy",
+    ig_s: "I film motivating reels about my transformation",
     tg_t: "Telegram: Hybrid athlete's journal",
     tg_s: "I show my routine and share my thoughts",
     yt_t: "YouTube: @dmkazanskiy",
